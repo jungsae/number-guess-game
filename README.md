@@ -1,1 +1,1 @@
-# Javascript
+# Number Guess Game
