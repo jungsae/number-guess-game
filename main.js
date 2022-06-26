@@ -31,11 +31,11 @@ function play(){
     let userValue = userInput.value;
     
     if(userValue < 1 || userValue > 100 || userValue ===""){
-        resultArea.textContent = "1 ~ 100 사이 숫자만 입력";
+        resultArea.textContent = "1 ~ 100 사이 숫자만 입력해주세요";
         return 0;
     }
     if(history.includes(userValue)){
-        resultArea.textContent = "중복된 숫자, try new input";
+        resultArea.textContent = "중복된 숫자입니다, try new input";
         return 0;
     }
 
@@ -60,6 +60,7 @@ function play(){
     if(gameOver == true)
     {
         playButton.disabled = true;
+        resultArea.textContent = "정답: " + computerNum;
     }
 }
 
